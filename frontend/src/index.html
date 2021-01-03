@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD PHP</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Controle de estoque (API PHP)</h1>
+            <input type="text" id="inputID" placeholder="ID" disabled>
+            <input type="text" id="inputDescricao" placeholder="NOME DO PRODUTO">
+            <input type="text" id="inputValor" placeholder="VALOR">
+
+            <select id="inputStatus">
+                <option value="">* SELECIONA O STATUS *</option>
+                <option value="ATIVO">ATIVO</option>
+                <option value="INATIVO">INATIVO</option>
+            </select>
+            <div class="form-actions">
+                <button id="btnSave" class="success">Gravar</button>
+                <button id="btnReset" class="alert">Limpar</button>
+                <button id="btnLoad" class="load">Carregar</button>
+            </div>
+        </header>
+
+        <main>
+            <table id="#tableDados">
+                <tr>
+                    <th>ID</th>
+                    <th>NOME</th>
+                    <th>VALOR</th>
+                    <th>STATUS</th>
+                    <th>AÇÃO</th>
+                </tr>
+
+                <tbody class="contentDynamic"></tbody>
+            </table>
+        </main>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

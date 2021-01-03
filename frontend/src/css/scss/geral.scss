@@ -1,0 +1,98 @@
+:root {
+    --blue: #00aaFF;
+    --red: #FF2220; 
+    --white: #FFF;
+}
+
+*, 
+*::after,
+*::before {
+    box-sizing: border-box;
+} 
+
+.wrapper {
+    padding: 0;
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    letter-spacing: -1px;
+    margin-bottom: 20px;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+select {
+    display: block;
+    padding-right: 0;
+    padding: 10px;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+    color: var(--white);
+    padding: 10px 14px;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: .9;
+}
+
+.success {
+    background: #0bb70b;
+}
+
+.alert {
+    background: var(--red);
+}
+
+.load {
+    background: var(--blue);
+    border: none;
+}
+
+.form-actions {
+    margin-top: 20px;
+
+    button + button {
+        margin-left: 5px;
+    }
+}
+
+table {
+    text-align: left;
+    color: var(--white);
+    margin-top: 20px;
+    width: 100%;
+
+    th {
+        background: rgba(100,100,100, 1);
+        padding: 8px 10px;
+    }
+
+    td {
+        color: #000;
+        padding-bottom: 7px;
+        padding-top: 7px;
+    }
+}
+
+
+
+
+
+
+
+
+
